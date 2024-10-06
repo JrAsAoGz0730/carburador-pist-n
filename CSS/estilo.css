@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Me permite deslizar cuando hago clic en los link del menu */
+  scroll-behavior: smooth;
+}
+
+/* SECCION MENU ENCABEZADO */
+
+.contenedor-header {
+  background: #00001a;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20 px;
+}
+
+.contenedor-header header .logocarburadoPiston img {
+  width: 50px;
+  height: 50px;
+}
+
+.contenedor-header header .logocarburadoPiston a {
+  font-family: "Roboto", sans-serif;
+  font-size: 34px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contenedor-header header ul {
+  display: flex;
+  list-style: none;
+}
+
+.contenedor-header header nav ul li a {
+  text-align: none;
+  color: #fff;
+  margin: 0 15px;
+  padding: 3px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.contenedor-header header nav ul li a:hover {
+  color: #c70039;
+}
+
+/* SECCION TIPO DE ENCABEZADO */
+
+.inicio {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(/img/portada.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.inicio .contenido-encabezado {
+  padding: 20px;
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+  border-radius: 40px;
+  margin-top: 30vh;
+}
+
+.inicio .contenido-encabezado h1 {
+  margin-top: 40px;
+  font-size: 80px;
+  font-family: "Lato", sans-serif;
+}
+
+.inicio .contenido-encabezado h2 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.inicio .contenido-encabezado .redes a img {
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 15%;
+  width: 50px;
+  height: 50px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: 0.3s;
+  background-color: #fff;
+}
+
+.inicio .contenido-encabezado .redes a img:hover {
+  background-color: #c70039;
+}
