@@ -114,3 +114,88 @@ html {
 .inicio .contenido-encabezado .redes a img:hover {
   background-color: #c70039;
 }
+
+/* SECCION TIPOS Y DESCRIPCCION */
+
+.tipos-descripcion {
+  background: linear-gradient(
+      to top,
+      rgba(30, 35, 38, 0.8),
+      rgba(30, 35, 38, 1)
+    ),
+    url(/img/tipos.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.tipos-descripcion .contenido-tipos {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.tipos-descripcion h2 {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.tipos-descripcion .tipos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tipos-descripcion .tipos .motos {
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.tipos-descripcion .tipos .motos img {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #000;
+}
+
+.tipos-descripcion .tipos .motos .cubrir {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(199, 0, 56, 0.8), rgba(199, 0, 57, 0.8));
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+
+.tipos-descripcion .tipos .motos .cubrir h3 {
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.tipos-descripcion .tipos .motos .cubrir a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.tipos-descripcion .tipos .motos .cubrir:hover {
+  opacity: 1;
+}
+
+.tipos-descripcion .tipos .motos .cubrir:hover h3 {
+  margin-bottom: 0px;
+}
